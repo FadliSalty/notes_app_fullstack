@@ -1,13 +1,10 @@
 import mysql from "mysql2/promise";
 
 export const db = await mysql.createConnection({
-  host: "sql12.freesqldatabase.com",
-  user: "sql12801525",
-  password: "sql12801525",
-  database: "qhWA7lIhYH",
-  waitForConnections: true,
-  connectionLimit: 5,
-  queueLimit: 0,
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "notes_db",
 });
 
 export const testConnection = async () => {
